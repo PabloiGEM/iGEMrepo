@@ -1,0 +1,119 @@
+body {
+    background:rgb(66, 66, 66) ;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:#011c40;;
+    padding: 10px 10px 10px 10px ;
+    font-size: 150%;
+    text-align: right;
+    height: 30px;
+
+}
+
+header.team{
+    background-image: url("images/team/DSCF4930.jpeg");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position-y: 25%;
+    background-position-x: 75%;
+    height: 600px;
+}
+
+header.Home{
+    background-image: url("images/blender/test.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 25%;
+    background-position-x: 75%;
+    height: 600px;
+}
+
+.logo {
+    display: inline-block;
+    height: 48px;
+    float:left;
+    margin: -9px;
+    padding: 0px;
+    font-size: 0px;
+    background-image: url("images/logo/team_2021/final_logo_white.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    width: 300px;
+    border-radius: 10px;
+}
+
+section {
+    background-color: #417FA6;
+    color: black;
+    padding: 20px;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flexbox-item{
+   width: 300px;
+   margin:10px;
+   padding: 20px;
+   border:1px solid #333;
+   background-color: #dfdfdf;
+   border-radius: 20px;
+}
+
+.flexbox-item.flexbox-item-1{
+    background-color: #F2913D;
+}
+
+.flexbox-item.flexbox-item-2{
+    background-color: #F27C38;
+}
+
+.flexbox-item.flexbox-item-3{
+    background-color: #F26835;
+}
+
+footer{
+    background-color:#011C40;
+    padding: 20px;
+    display: flex;
+}
+
+ul {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+footer div {
+    margin:auto;
+    background: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #F2913D;
+}
+
+
