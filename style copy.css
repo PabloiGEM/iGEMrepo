@@ -30,7 +30,7 @@ header.Home{
     background-repeat: no-repeat;
     background-position-y: 25%;
     background-position-x: 75%;
-    height: 600px;
+    height: 800px;
 }
 
 .logo {
@@ -48,7 +48,7 @@ header.Home{
 }
 
 section {
-    background-color: #417FA6;
+    background-color: #704F51;
     color: black;
     padding: 20px;
 }
