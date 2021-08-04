@@ -30,7 +30,7 @@ header.Home{
     background-repeat: no-repeat;
     background-position-y: 25%;
     background-position-x: 75%;
-    height: 800px;
+    height: 765px;
 }
 
 .logo {
@@ -116,4 +116,7 @@ a:hover{
     color: #F2913D;
 }
 
-
+/*responsives rules*/
+@media screen and () {
+    
+}
