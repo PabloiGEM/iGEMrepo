@@ -1,3 +1,30 @@
+    /* 
+    Table of content
+
+    1. Global Style
+
+    2. Typography
+
+    3. Layout
+        3.1 Headers
+        3.2 Sections
+        3.3 Footers
+
+    4. Components
+        4.1 Navigation bar
+        4.2 Body
+        4.3 Footer
+        4.4 Links
+
+    5. Responsive Rules
+
+    */
+
+
+/* ============ 
+   Global Style
+   ============ */
+
 body {
     background:rgb(66, 66, 66) ;
     color: white;
@@ -6,12 +33,21 @@ body {
     padding: 0;
 }
 
+/* ============ 
+    Typography
+   ============ */
+
 h1 {
     text-align: center;
     font-size: 50px;
     color: white;
 }
 
+/* =========
+    Layout
+   ========= */
+   
+   /*headers*/
 
 header {
     background-color:#011c40;
@@ -19,7 +55,6 @@ header {
     font-size: 150%;
     text-align: right;
     height: 55px;
-
 }
 
 header.team{
@@ -41,6 +76,30 @@ header.Home{
     background-position-y: center;
 }
 
+/* Sections */
+
+section {
+    background-color: #275D8C;
+    color: black;
+    padding: 15%;
+    height: 5000px;
+    padding-top: 200px;
+}
+
+/* Footers */
+
+footer{
+    background-color:#011C40;
+    padding: 20px;
+    display: flex;
+    }
+
+/* ============ 
+    Components
+   ============ */
+
+   /* Navigation bar */
+
 .logo {
     height: 60px;
     float:left;
@@ -53,13 +112,48 @@ header.Home{
     width: 300px;
 }
 
-section {
-    background-color: #275D8C;
-    color: black;
-    padding: 15%;
-    height: 5000px;
-    padding-top: 200px;
+li {
+    display: inline-block;
+    margin: 0 75px 0 0;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    top:10px;
 }
+    
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #417FA6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: none;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0px; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 600px;
+}
+    /* Body */
 
 .flexbox-container {
     display: flex;
@@ -68,14 +162,13 @@ section {
 }
 
 .flexbox-item{
-   width: 300px;
-   margin:100px;
-   padding: 27px;
-   border:1px solid #333;
-   background-color: #dfdfdf;
-   border-radius: 20px;
-   
-}
+    width: 300px;
+    margin:100px;
+    padding: 27px;
+    border:1px solid #333;
+    background-color: #dfdfdf;
+    border-radius: 20px;
+    }
 
 .flexbox-item.flexbox-item-1{
     background-color: #F2913D;
@@ -83,96 +176,48 @@ section {
 
 .flexbox-item.flexbox-item-2{
     background-color: #F27C38;
-    
+
 }
 
 .flexbox-item.flexbox-item-3{
     background-color: #F26835;
 }
 
-footer{
-    background-color:#011C40;
-    padding: 20px;
-    display: flex;
-}
-
-ul {
-    margin:0;
-    padding:0;
-    list-style-type: none;
-}
-
-li {
-    display: inline-block;
-    margin: 0 75px 0 0;
-    color: black;
-}
+    /* Footer */
 
 footer div {
     margin:auto;
     background: none;
 }
 
+img{
+    width: 900px;
+    object-fit: none;  
+    object-position: center;
+    }
+
+    /* links */
+
+a:link {
+    text-decoration: none;
+    color: white;
+    }
+
 a:visited {
     text-decoration: none;
     color: white;
 }
 
-a:link {
-    text-decoration: none;
-    color: white;
+a:hover{
+    color: #F26835;
+    }
+
+/* ================= 
+   Responsive Rules
+   ================= */
+
+@media screen and (max-width:990px) {
+
 }
 
-  .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
 
-  a:hover{
-    color: #F2913D;
-}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  .navbar {
-    overflow: hidden;
-    background-color: none;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0px; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    height: 600px;
-  }
-
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    top:10px;
-  }
-  
-  .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #417FA6;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        text-align: left;
-        border-radius: 10px;
-  }
-
-  img{
-    width: 900px;
-    object-fit: none;  
-    object-position: center;
-}
-
-  /*RESPONSIVE RULES*/
-  @media screen and (max-width:990px) {
-      
-  }
-
- 
