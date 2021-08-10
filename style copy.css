@@ -1,23 +1,18 @@
-    /* 
+ /* 
     Table of content
-
     1. Global Style
-
     2. Typography
-
     3. Layout
         3.1 Headers
         3.2 Sections
         3.3 Footers
-
     4. Components
         4.1 Navigation bar
+            4.1.1 Dropdown
         4.2 Body
         4.3 Footer
         4.4 Links
-
     5. Responsive Rules
-
     */
 
 
@@ -25,7 +20,7 @@
    Global Style
    ============ */
 
-body {
+   body {
     background:rgb(66, 66, 66) ;
     color: white;
     font-family:Arial, Helvetica, sans-serif;
@@ -49,13 +44,6 @@ h1 {
    
    /*headers*/
 
-header {
-    background-color:#011c40;
-    padding: 10px 10px 10px 10px ;
-    font-size: 150%;
-    text-align: right;
-    height: 55px;
-}
 
 header.team{
     background-image: url("images/team/DSCF4930.jpeg");
@@ -66,20 +54,20 @@ header.team{
     height: 600px;
 }
 
-header.Home{
-    /*background-image: url("images/blender/test.png");*/
-    background-image: url("images/logo/team_2021/final_logo_white_croped.png");
-    background-size: 85%;
-    background-repeat: no-repeat;
-    height: 1000px;
-    background-position-x: center;
-    background-position-y: center;
-}
-
 /* Sections */
 
+.Home{
+    background-image: url(images/wallpaint/miniature_video.png);
+    position: static;
+    top: 0px;
+    height: 565px;
+    background-image: url("images/wallpaint/miniature_video.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:top left;
+}
 section {
-    background-color: #275D8C;
+    background-color: #5D7090;
     color: black;
     padding: 15%;
     height: 5000px;
@@ -103,7 +91,7 @@ footer{
 .logo {
     height: 60px;
     float:left;
-    margin: 0px;
+    margin: 15px;
     padding: 0px;
     font-size: 0px;
     background-image: url("images/logo/team_2021/final_logo_white_croped.png");
@@ -122,7 +110,9 @@ li {
     display: inline-block;
     top:10px;
 }
-    
+
+        /* dropdown */
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -148,11 +138,15 @@ li {
 .navbar {
     overflow: hidden;
     background-color: none;
+    font-size: 150%;
+    text-align: right;
+    height: 55px;
     position: fixed; /* Set the navbar to fixed position */
     top: 0px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     height: 600px;
 }
+
     /* Body */
 
 .flexbox-container {
@@ -191,9 +185,9 @@ footer div {
 }
 
 img{
-    width: 900px;
-    object-fit: none;  
-    object-position: center;
+    width: 400px;
+    object-fit: contain;
+    background-position: top left;
     }
 
     /* links */
@@ -219,5 +213,3 @@ a:hover{
 @media screen and (max-width:990px) {
 
 }
-
-
