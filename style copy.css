@@ -1,5 +1,7 @@
- /* 
+ /* ~~~~~~~~~~~~~~~~~~~~~~~
+   
     Table of content
+
     1. Global Style
     2. Typography
     3. Layout
@@ -9,11 +11,12 @@
     4. Components
         4.1 Navigation bar
             4.1.1 Dropdown
-        4.2 Body
+        4.2 Section
         4.3 Footer
         4.4 Links
     5. Responsive Rules
-    */
+
+    ~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
 /* ============ 
@@ -102,16 +105,16 @@ footer{
 
 li {
     display: inline-block;
-    margin: 0 75px 0 0;
+    margin: 0 88px 0 0;
     }
+
+        /* dropdown */
 
 .dropdown {
     position: relative;
     display: inline-block;
     top:10px;
 }
-
-        /* dropdown */
 
 .dropdown-content {
     display: none;
@@ -147,7 +150,8 @@ li {
     height: 600px;
 }
 
-    /* Body */
+    /* Section */
+       
 
 .flexbox-container {
     display: flex;
@@ -162,6 +166,7 @@ li {
     border:1px solid #333;
     background-color: #dfdfdf;
     border-radius: 20px;
+    flex-direction: row;
     }
 
 .flexbox-item.flexbox-item-1{
@@ -177,6 +182,64 @@ li {
     background-color: #F26835;
 }
 
+ /*apricot*/
+            /*First*/
+            .apricot {
+                position: relative;
+                width: 300px; 
+                height: 173.21px;
+                background-color: #F27C38;
+                margin: 170px 520px;
+                }
+                
+            .apricot:before,
+            .apricot:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 150px solid transparent;
+            border-right: 150px solid transparent;
+            }
+            
+            .apricot:before {
+            bottom: 100%;
+            border-bottom: 86.60px solid #F27C38;
+            }
+            
+            .apricot:after {
+            top: 100%;
+            width: 0;
+            border-top: 86.60px solid #F27C38;
+            }
+            /*second apricot*/
+            .apricot_second {
+                position: absolute;
+                width: 250px; 
+                height: 144.34px;
+                background-color: #5D7090;
+                margin: -327px 545px;
+                }
+                
+            .apricot_second:before,
+            .apricot_second:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 125px solid transparent;
+            border-right: 125px solid transparent;
+            }
+            
+            .apricot_second:before {
+            bottom: 100%;
+            border-bottom: 72.17px solid #5D7090;
+            }
+            
+            .apricot_second:after {
+            top: 100%;
+            width: 0;
+            border-top: 72.17px solid #5D7090;
+            }
+    
     /* Footer */
 
 footer div {
