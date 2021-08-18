@@ -59,20 +59,25 @@ header.team{
 
 /* Sections */
 
-.Home{
+#Home{
     background-image: url(images/wallpaint/miniature_video.png);
     position: static;
     top: 0px;
-    height: 565px;
-    background-image: url("images/wallpaint/miniature_video.png");
+    height: 1080px;
+    width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position:top left;
 }
+
+#Home h1{
+    width: 100%;
+    position:absolute;
+    bottom: 10%;
+}
 section {
     background-color: #5D7090;
     color: black;
-    padding: 15%;
     height: 5000px;
     padding-top: 200px;
 }
@@ -182,64 +187,6 @@ li {
     background-color: #F26835;
 }
 
- /*apricot*/
-            /*First*/
-            .apricot {
-                position: relative;
-                width: 300px; 
-                height: 173.21px;
-                background-color: #F27C38;
-                margin: 170px 520px;
-                }
-                
-            .apricot:before,
-            .apricot:after {
-            content: "";
-            position: absolute;
-            width: 0;
-            border-left: 150px solid transparent;
-            border-right: 150px solid transparent;
-            }
-            
-            .apricot:before {
-            bottom: 100%;
-            border-bottom: 86.60px solid #F27C38;
-            }
-            
-            .apricot:after {
-            top: 100%;
-            width: 0;
-            border-top: 86.60px solid #F27C38;
-            }
-            /*second apricot*/
-            .apricot_second {
-                position: absolute;
-                width: 250px; 
-                height: 144.34px;
-                background-color: #5D7090;
-                margin: -327px 545px;
-                }
-                
-            .apricot_second:before,
-            .apricot_second:after {
-            content: "";
-            position: absolute;
-            width: 0;
-            border-left: 125px solid transparent;
-            border-right: 125px solid transparent;
-            }
-            
-            .apricot_second:before {
-            bottom: 100%;
-            border-bottom: 72.17px solid #5D7090;
-            }
-            
-            .apricot_second:after {
-            top: 100%;
-            width: 0;
-            border-top: 72.17px solid #5D7090;
-            }
-    
     /* Footer */
 
 footer div {
