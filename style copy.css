@@ -58,10 +58,19 @@ header.team{
 }
 
 /* Sections */
-
-#Home{
-    background-image: url(images/wallpaint/miniature_video.png);
+#logo_Home{
+    background-image: url(images/logo/team_2021/logo\ white\ under.png);
     position: static;
+    top: 100px;
+    height: 1080px;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#ice_Home{
+    background-image: url(images/wallpaint/wallpaint_ice.jpeg);
+    position: relative;
     top: 0px;
     height: 1080px;
     width: 100%;
@@ -70,11 +79,70 @@ header.team{
     background-position:top left;
 }
 
+.project_introduction {
+    width: 60rem;
+    height: 30rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    left: 25%;
+    top:30%;
+    padding: 70px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+.project_indepth{
+    width: 60rem;
+    height: 30rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    left: 25%;
+    top:30%;
+    padding: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#text_intro {
+    background-color: none;
+    grid-column: 1/4;
+    grid-row: 1;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+#loss{
+    background-color: none;
+    grid-column: 1/4;
+    text-align: center;
+    line-height: 1px;
+}
+
+#pourcentage{
+    font-size: 125px;
+    color: black;
+}
+
+#one_product{
+    grid-column: 1/4;
+    text-align: center;
+}
+
 #Home h1{
     width: 100%;
     position:absolute;
     bottom: 10%;
 }
+
 section {
     background-color: #5D7090;
     color: black;
