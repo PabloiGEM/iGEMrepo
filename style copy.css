@@ -59,17 +59,18 @@ header.team{
 
 /* Sections */
 #logo_Home{
-    background-image: url(images/logo/team_2021/logo\ white\ under.png);
+    background-image: url(images/logo/team_2021/logo_home.png);
     position: static;
     top: 100px;
     height: 1080px;
     width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
+    border: 2px solid black;
 }
 
 #ice_Home{
-    background-image: url(images/wallpaint/wallpaint_ice.jpeg);
+    background-image: url(images/wallpaint/wallpaint_ice_new.png);
     position: relative;
     top: 0px;
     height: 1080px;
@@ -77,6 +78,8 @@ header.team{
     background-size: 100%;
     background-repeat: no-repeat;
     background-position:top left;
+    border: 2px solid black;
+    z-index: -1000;
 }
 
 .project_introduction {
@@ -88,7 +91,7 @@ header.team{
     backdrop-filter: blur(5px);
     position: absolute;
     left: 25%;
-    top:30%;
+    top:15%;
     padding: 70px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -104,11 +107,12 @@ header.team{
     backdrop-filter: blur(5px);
     position: absolute;
     left: 25%;
-    top:30%;
+    top:15%;
     padding: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
 }
 
 #text_intro {
@@ -137,6 +141,39 @@ header.team{
     text-align: center;
 }
 
+#apricot_yellow{
+    grid-column: 1;
+    grid-row: 3;
+    repeat:none;
+    object-fit: cover;
+    width: 70%;
+    display: flex;
+
+}
+
+#apricot_orange{
+    grid-column: 2;
+    grid-row: 3;
+    repeat:none;
+    object-fit: cover;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#apricot_red{
+    grid-column: 3;
+    grid-row: 3;
+    repeat:none;
+    object-fit: cover;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 #Home h1{
     width: 100%;
     position:absolute;
@@ -224,35 +261,48 @@ li {
 }
 
     /* Section */
-       
-
-.flexbox-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.project{
+    display: grid;
+    grid-template-columns: 500px auto;
+    grid-row: repeat(3 1fr);
+    grid-gap:10px;
+    row-gap: 250px;
+    grid-auto-rows: 450px;
+    justify-items: start;
+    align-items: center;
+    padding: 3em;
 }
 
-.flexbox-item{
-    width: 300px;
-    margin:100px;
-    padding: 27px;
-    border:1px solid #333;
-    background-color: #dfdfdf;
-    border-radius: 20px;
-    flex-direction: row;
-    }
-
-.flexbox-item.flexbox-item-1{
-    background-color: #F2913D;
+#p1_logo{
+    grid-column: 1;
 }
 
-.flexbox-item.flexbox-item-2{
-    background-color: #F27C38;
+#p1_text{
+    grid-column: 3/5;
+    text-align: justify;
+}
+
+#p2_text {
+    grid-column: 2/4;
+    text-align: justify;
 
 }
 
-.flexbox-item.flexbox-item-3{
-    background-color: #F26835;
+#p2_logo {
+    grid-column: 5;
+    grid-row: 2;
+    
+}
+
+#p3_logo {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#p3_text {
+    grid-column: 3/5;
+    grid-row: 3;
+    text-align: justify;
 }
 
     /* Footer */
