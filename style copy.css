@@ -41,6 +41,10 @@ h1 {
     color: white;
 }
 
+h2{
+    color:#21262e ;
+}
+
 /* =========
     Layout
    ========= */
@@ -133,7 +137,7 @@ header.team{
 
 #pourcentage{
     font-size: 125px;
-    color: black;
+    color: #21262e;
 }
 
 #one_product{
@@ -144,7 +148,6 @@ header.team{
 #apricot_yellow{
     grid-column: 1;
     grid-row: 3;
-    repeat:none;
     object-fit: cover;
     width: 70%;
     display: flex;
@@ -154,7 +157,6 @@ header.team{
 #apricot_orange{
     grid-column: 2;
     grid-row: 3;
-    repeat:none;
     object-fit: cover;
     width: 70%;
     display: flex;
@@ -166,7 +168,6 @@ header.team{
 #apricot_red{
     grid-column: 3;
     grid-row: 3;
-    repeat:none;
     object-fit: cover;
     width: 70%;
     display: flex;
@@ -258,13 +259,14 @@ li {
     top: 0px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     height: 600px;
+    z-index: 1000;
 }
 
     /* Section */
 .project{
     display: grid;
     grid-template-columns: 500px auto;
-    grid-row: repeat(3 1fr);
+    grid-row: auto;
     grid-gap:10px;
     row-gap: 250px;
     grid-auto-rows: 450px;
@@ -281,6 +283,18 @@ li {
     grid-column: 3/5;
     text-align: justify;
 }
+
+ #background_p1{
+   width: 60rem;
+   height: 30rem;
+   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+   border-radius: 5px;
+   background: linear-gradient(90deg, rgba(36,18,0,0.9318102240896359) 0%, rgba(121,15,9,0.6601015406162465) 0%, rgba(255,220,0,0.45281862745098034) 100%);
+   backdrop-filter: blur(5px);
+   position: absolute;
+   width: 100%;
+   top:15%;
+} 
 
 #p2_text {
     grid-column: 2/4;
