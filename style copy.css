@@ -25,6 +25,9 @@
 
    body {
     background:rgb(66, 66, 66) ;
+    background-image: url("images/wallpaint/wallpaint_ice_new.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
@@ -70,11 +73,9 @@ header.team{
     width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
-    border: 2px solid black;
 }
 
 #ice_Home{
-    background-image: url(images/wallpaint/wallpaint_ice_new.png);
     position: relative;
     top: 0px;
     height: 1080px;
@@ -82,7 +83,6 @@ header.team{
     background-size: 100%;
     background-repeat: no-repeat;
     background-position:top left;
-    border: 2px solid black;
     z-index: -1000;
 }
 
@@ -182,7 +182,6 @@ header.team{
 }
 
 section {
-    background-color: #5D7090;
     color: black;
     height: 5000px;
     padding-top: 200px;
@@ -291,10 +290,11 @@ li {
    border-radius: 5px;
    background: linear-gradient(90deg, rgba(36,18,0,0.9318102240896359) 0%, rgba(121,15,9,0.6601015406162465) 0%, rgba(255,220,0,0.45281862745098034) 100%);
    backdrop-filter: blur(5px);
-   position: absolute;
+   position:absolute;
    width: 100%;
-   top:15%;
+   z-index:-1000;;
 } 
+
 
 #p2_text {
     grid-column: 2/4;
@@ -347,6 +347,24 @@ a:visited {
 a:hover{
     color: #F26835;
     }
+
+
+/* les test pour float */
+.box {
+    box-sizing: border-box;
+    float: left;
+    width: 40%;
+    padding: 50px;
+    z-index: 1000;
+ }
+
+#p1_txt {
+    text-align: justify;
+    position: relative;
+    padding: 120px;
+    z-index: 1000;
+}
+
 
 /* ================= 
    Responsive Rules
