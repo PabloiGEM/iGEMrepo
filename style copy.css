@@ -90,9 +90,9 @@ header.team{
     width: 60rem;
     height: 30rem;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    backdrop-filter: blur(5px);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
     position: absolute;
     left: 25%;
     top:15%;
@@ -229,12 +229,13 @@ li {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #417FA6;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    backdrop-filter: blur(7px);
+    border-radius: 5px;
+    background-color: #417fa677;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     text-align: left;
-    border-radius: 10px;
 }
 
 .dropdown-content a {
@@ -258,66 +259,69 @@ li {
     top: 0px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     height: 600px;
-    z-index: 1000;
+    z-index: 2000;
 }
 
     /* Section */
-.project{
-    display: grid;
-    grid-template-columns: 500px auto;
-    grid-row: auto;
-    grid-gap:10px;
-    row-gap: 250px;
-    grid-auto-rows: 450px;
-    justify-items: start;
-    align-items: center;
-    padding: 3em;
-}
-
-#p1_logo{
-    grid-column: 1;
-}
-
-#p1_text{
-    grid-column: 3/5;
-    text-align: justify;
-}
-
  #background_p1{
    width: 60rem;
-   height: 30rem;
-   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
-   border-radius: 5px;
-   background: linear-gradient(90deg, rgba(36,18,0,0.9318102240896359) 0%, rgba(121,15,9,0.6601015406162465) 0%, rgba(255,220,0,0.45281862745098034) 100%);
+   height: 31.5rem;
+   background:  linear-gradient(90deg, rgba(255, 255, 255, .15) 0%, rgba(207,115,6,0.665703781512605) 100%);
    backdrop-filter: blur(5px);
    position:absolute;
    width: 100%;
    z-index:-1000;;
 } 
 
+.box_1 {
+    float: left;
+    width: 40%;
+    padding: 50px;
+    z-index: 1000;
+ }
 
-#p2_text {
-    grid-column: 2/4;
+#p1_txt {
     text-align: justify;
-
+    position: relative;
+    padding: 120px;
+    z-index: 1000;
 }
 
-#p2_logo {
-    grid-column: 5;
-    grid-row: 2;
-    
-}
+#background_p2{
+    width: 60rem;
+    height: 30.25rem;
+    background: linear-gradient(90deg, rgba(207,115,6,0.665703781512605) 0%, rgba(255, 255, 255, .15) 100%);
+    backdrop-filter: blur(5px);
+    position:absolute;
+    width: 100%;
+    z-index:-1000;;
+ } 
 
-#p3_logo {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-#p3_text {
-    grid-column: 3/5;
-    grid-row: 3;
-    text-align: justify;
-}
+ #background_p3{
+    width: 60rem;
+    height: 30rem;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(54,133,194,0.5508578431372548) 24%, rgba(207,34,6,0.665703781512605) 68%);
+    backdrop-filter: blur(5px);
+    position:absolute;
+    width: 100%;
+    z-index:-1000;;
+ } 
+ 
+ 
+ .box_2 {
+     float:right;
+     width: 40%;
+     padding: 50px;
+     z-index: 1000;
+  }
+ 
+ #p2_txt {
+     text-align: justify;
+     position: relative;
+     padding: 120px;
+     z-index: 1000;
+ }
 
     /* Footer */
 
@@ -347,24 +351,6 @@ a:visited {
 a:hover{
     color: #F26835;
     }
-
-
-/* les test pour float */
-.box {
-    box-sizing: border-box;
-    float: left;
-    width: 40%;
-    padding: 50px;
-    z-index: 1000;
- }
-
-#p1_txt {
-    text-align: justify;
-    position: relative;
-    padding: 120px;
-    z-index: 1000;
-}
-
 
 /* ================= 
    Responsive Rules
