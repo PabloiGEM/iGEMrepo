@@ -24,6 +24,9 @@
    ============ */
 
    body {
+    opacity: 0;
+    transition: opacity 2s;
+    -webkit-transition: opacity 3s;
     background:rgb(66, 66, 66) ;
     background-image: url("images/wallpaint/wallpaint_ice_new.png");
     background-repeat: no-repeat;
