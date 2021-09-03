@@ -23,7 +23,7 @@
    Global Style
    ============ */
 
-   .background{
+.background{
     width: 100%;
     -webkit-animation: fadein 2s; 
        -moz-animation: fadein 2s; 
@@ -31,8 +31,8 @@
          -o-animation: fadein 2s; 
     animation: fadein 10s;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     position: fixed;
+    background-attachment: fixed;
     z-index: -1000;
 }
 
@@ -140,7 +140,7 @@ header.team{
     top:15%;
     padding: 70px;
     margin: auto;
-    margin-top: 400px;
+    margin-top: 200px;
     margin-bottom: 500px;
   }
 
@@ -235,6 +235,7 @@ footer{
     background-color:#011C40;
     padding: 20px;
     display: flex;
+    position: absolute;
     }
 
 /* ============ 
