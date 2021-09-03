@@ -368,8 +368,9 @@ li {
     /* Footer */
 
 footer div {
-    margin:auto;
+    margin-bottom:0px;
     background: none;
+  
 }
 
 img{
