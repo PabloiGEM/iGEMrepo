@@ -117,7 +117,7 @@ header.team{
     z-index: 10000;
 }
 
-#ice_Home{
+/* #ice_Home{
     position: relative;
     top: 0px;
     height: 1080px;
@@ -126,38 +126,39 @@ header.team{
     background-repeat: no-repeat;
     background-position:top left;
     z-index: -1000;
-}
+} */
 
 .project_introduction {
+    position:relative;
     width: 60rem;
     height: 30rem;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     backdrop-filter: blur(25px);
     border-radius: 15px;
     background-color: rgba(255, 255, 255, .15);
-    position: absolute;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 10px;
     top:15%;
     padding: 70px;
+    margin: auto;
+    margin-top: 400px;
+    margin-bottom: 500px;
   }
 
 .project_indepth{
+    position:relative;
     width: 60rem;
     height: 30rem;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 15px;
     background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(25px);
-    position: absolute;
-    left: 25%;
-    top:15%;
+    margin: auto;
     padding: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
+    margin-bottom: 500px;
 }
 
 #text_intro {
@@ -312,7 +313,7 @@ li {
    position:absolute;
    width: 100%;
    z-index:-1000;;
-} 
+}
 
 .box_1 {
     float: left;
