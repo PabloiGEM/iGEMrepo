@@ -94,14 +94,16 @@ body.engineering {
     Typography
    ============ */
 
-h1 {
+/* h1 {
     text-align: center;
     font-size: 50px;
     color: white;
-}
+} */
 
-h2{
-    color:#21262e ;
+.content_text{
+    color:#21262e;
+    font-size: 1.5em; 
+    font-weight: bolder;
 }
 
 /* =========
@@ -341,6 +343,8 @@ li {
     backdrop-filter: blur(25px);
     width: 100%;
     z-index:-1000;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
  } 
 
 .box_1 {
@@ -349,6 +353,16 @@ li {
     position: absolute;
     top: 50%;
     left: 5%;
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+ }
+
+ .box_2 {
+    z-index: 1000;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 5%;
     -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
  }
@@ -363,6 +377,15 @@ li {
     transform: translate(0%, -50%);
  }
 
+.texto_2{
+    grid-column: 1/2;
+    text-align: justify;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+ }
 
 #p1_txt {
     text-align: justify;
@@ -383,12 +406,7 @@ li {
  } 
  
  
- .box_2 {
-     float:right;
-     width: 40%;
-     padding: 50px;
-     z-index: 1000;
-  }
+ 
  
  #p2_txt {
      text-align: justify;
@@ -447,8 +465,8 @@ a:hover{
 
 /* FOUTEUR DE MERDE */
 
-.fouteur{
-    background-color: red;
+footer{
+    background-color: #011C40;
     width: 100%;
     height: auto;
     display:grid;
@@ -461,13 +479,65 @@ a:hover{
 }
 
 #sponsor{
-    background-color: rosybrown;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 1rem
+
+}
+
+.last{
+    grid-column: 2;
+}
+
+#sponsor h1{
+   grid-column: 1/4; 
+   border-bottom: white 1px  solid;
+   padding: 20px;
+   margin-top: 0px;
+}
+
+#sponsor img {
+    width: 10rem;
 }
 
 #follow{
-    background-color: rosybrown;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 150px auto;
+    grid-gap: 1rem;
+    border-left: white 1px  solid;
+}
+
+#follow h1{
+    grid-column: 1/4; 
+    padding: 20px;
+    margin-top: 0px;
+    border-bottom: white 1px  solid;
+ }
+
+#follow img {
+    width: 5rem;
 }
 
 #contact{
-    background-color: rosybrown;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 150px auto;
+    grid-gap: 1rem;
+    border-left: white 1px  solid;
+}
+
+#contact h1{
+    grid-column: 1/4; 
+    padding: 20px;
+    margin-top: 0px;
+    border-bottom: white 1px  solid;
+ }
+
+#follow img {
+    width: 5rem;
 }
