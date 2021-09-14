@@ -318,7 +318,7 @@ li {
     text-align: left;
 }
 
-.dropdown-content a {
+.dropdown-content a{
     color: white;
     padding: 12px 16px;
     text-decoration: none;
@@ -478,7 +478,7 @@ a:visited {
     color: white;
 }
 
-a:hover{
+.dropdown-content a:hover, #home_link a:hover{
     color: #F26835;
     }
 
