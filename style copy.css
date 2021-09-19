@@ -25,6 +25,7 @@
 
 .background{
     width: 100%;
+    
     -webkit-animation: fadein 2s; 
        -moz-animation: fadein 2s; 
         -ms-animation: fadein 2s; 
@@ -32,7 +33,7 @@
     animation: fadein 10s;
     background-repeat: no-repeat;
     position: fixed;
-    background-attachment: fixed;
+  
     z-index: -1000;
 }
 
@@ -296,13 +297,13 @@ img.logo_Home_img{
     background-repeat: no-repeat;
     width: 30%;
 }
-
+ 
 li {
     display: inline-block;
     margin: 0 88px 0 0;
     }
 
-        /* dropdown */
+      /*  dropdown */
 
 .dropdown {
     position: relative;
@@ -586,4 +587,11 @@ footer div {
 
 #mail{
     grid-column: 2;
+}
+
+
+
+/*BS customize*/
+.dropdown-item{
+    color:black;
 }
