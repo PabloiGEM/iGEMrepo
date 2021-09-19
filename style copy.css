@@ -124,15 +124,20 @@ header.team{
 }
 
 /* Sections */
-#logo_Home{
-    background-image: url(images/logo/team_2021/logo_home.png);
+.logo_Home{
+    /*background-image: url(images/logo/team_2021/logo_home.png);*/
     position: static;
     top: 100px;
-    height: 1080px;
-    width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 10000;
+    display: flex;
+    justify-content: center;
+}
+img.logo_Home_img{
+    width: 80%;
+   
+
 }
 
 /* #ice_Home{
@@ -148,8 +153,8 @@ header.team{
 
 .project_introduction {
     position:relative;
-    width: 80rem;
-    height: 35rem;
+    width: 80%;
+    height: 50%;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     backdrop-filter: blur(25px);
     border-radius: 15px;
@@ -169,8 +174,8 @@ header.team{
 
 .project_indepth{
     position:relative;
-    width: 80rem;
-    height: 35rem;
+    width: 80%;
+    height: 50%;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 15px;
     background-color: #f0c58c4b;
@@ -287,9 +292,9 @@ header.team{
     padding: 0px;
     font-size: 0px;
     background-image: url("images/logo/team_2021/final_logo_white_croped.png");
-    background-size: 200px;
+    background-size: 35%;
     background-repeat: no-repeat;
-    width: 300px;
+    width: 30%;
 }
 
 li {
@@ -332,14 +337,14 @@ li {
 
 .navbar {
     overflow: hidden;
-    background-color: none;
+    background: rgb(171,174,175);
+    background: linear-gradient(0deg, rgba(171,174,175,1) 0%, rgba(255,239,239,0.41220238095238093) 100%);
     font-size: 150%;
     text-align: right;
-    height: 55px;
     position: fixed; /* Set the navbar to fixed position */
     top: 0px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    height: 600px;
+    height: 10%;
     z-index: 2000;
 }
 
@@ -348,6 +353,9 @@ li {
 .project_presentation_home{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
 }
 
 .background_p1{
@@ -378,6 +386,7 @@ li {
     left: 5%;
     -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
+    width: 25%
  }
 
  .box_2 {
@@ -388,7 +397,12 @@ li {
     right: 5%;
     -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
+    width:25%
  }
+img.img_box{
+    width: 80%; /*to change image size here*/
+
+}
 
 .texto_1{
     grid-column: 2/3;
@@ -398,6 +412,8 @@ li {
     right: 10%;
     -ms-transform: translate( 0%, -50%);
     transform: translate(0%, -50%);
+    width: 80%;
+    height:80%;
  }
 
 .texto_2{
@@ -408,6 +424,8 @@ li {
     left: 10%;
     -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
+    width: 80%;
+    height:80%;
  }
 
 /* #p1_txt {
@@ -522,7 +540,7 @@ footer div {
 }
 
 #sponsor img {
-    width: 8rem;
+    width: 70%;
 }
 
 #follow{
@@ -542,7 +560,7 @@ footer div {
  }
 
 #follow img {
-    width: 5rem;
+    width: 70%;
 }
 
 #contact{
@@ -561,12 +579,9 @@ footer div {
     border-bottom: white 1px  solid;
  }
 
-#follow img {
-    width: 5rem;
-}
 
 #contact img{
-    width: 7rem;
+    width: 70%;
 }
 
 #mail{
