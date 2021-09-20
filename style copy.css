@@ -25,7 +25,7 @@
 
 .background{
     width: 100%;
-    
+    size: 100%;
     -webkit-animation: fadein 2s; 
        -moz-animation: fadein 2s; 
         -ms-animation: fadein 2s; 
@@ -223,11 +223,15 @@ img.logo_Home_img{
     line-height: 1px;
 }
 
+
 #pourcentage{
     font-family:Impact, Haettenschweiler, 'Bold', sans-serif;
     font-size: 8vw;
     color: #21262e;
+   
 }
+
+
 
 #one_product{
     grid-column: 1/4;
