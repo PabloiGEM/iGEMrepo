@@ -27,11 +27,11 @@
     <body onload="document.body.style.opacity='1'">
         <header>
             
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-0">
                 
                 <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                      <img src="images\logo\team_2021\logo-bl.svg" width="70%" >
+                      <img src="images\logo\team_2021\logo-bl.svg" width="150px" >
                 </a>
                 <form class="d-flex">
 
@@ -40,9 +40,8 @@
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNav">
-
                     <ul class="navbar-nav">
-                        <div class="d-inline-flex p-2 bd-highlight">
+                   <div class="d-inline-flex p-2 bd-highlight">
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                       </li>
@@ -53,9 +52,9 @@
                           Project
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" style="color: #040505;" href="#">Description</a></li>
-                          <li><a class="dropdown-item" style="color: #040505;" href="#">Results</a></li>
-                          <li><a class="dropdown-item" style="color: #040505;" href="#">Measurements</a></li>
+                          <li><a class="dropdown-item" id="di" href="#">Description</a></li>
+                          <li><a class="dropdown-item" id="di" href="#">Results</a></li>
+                          <li><a class="dropdown-item" id="di" href="#">Measurements</a></li>
                         </ul>
                       </li>
                       </div>
@@ -65,23 +64,23 @@
                           Wetlab
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Description</a></li>
-                          <li><a class="dropdown-item" href="#">Results</a></li>
+                          <li><a id="di" class="dropdown-item" href="#">Description</a></li>
+                          <li><a id="di"class="dropdown-item" href="#">Results</a></li>
                         
-                          <li><a class="dropdown-item" href="#">Measurements</a></li>
+                          <li><a id="di"class="dropdown-item" href="#">Measurements</a></li>
                         </ul>
                       </li>
-                    </div>
+                    
                     <div class="d-inline-flex p-2 bd-highlight"></div>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Drylab
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Description</a></li>
-                          <li><a class="dropdown-item" href="#">Results</a></li>
+                          <li><a id="di"class="dropdown-item" href="#">Description</a></li>
+                          <li><a id="di"class="dropdown-item" href="#">Results</a></li>
                     
-                          <li><a class="dropdown-item" href="#">Measurements</a></li>
+                          <li><a id="di"class="dropdown-item" href="#">Measurements</a></li>
                         </ul>
                       </li>
                       <div class="d-inline-flex p-2 bd-highlight"></div>
@@ -90,10 +89,10 @@
                           Human Practices
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Description</a></li>
-                          <li><a class="dropdown-item" href="#">Results</a></li>
+                          <li><a id="di"class="dropdown-item" href="#">Description</a></li>
+                          <li><a id="di"class="dropdown-item" href="#">Results</a></li>
                     
-                          <li><a class="dropdown-item" href="#">Measurements</a></li>
+                          <li><a id="di"class="dropdown-item" href="#">Measurements</a></li>
                         </ul>
                       </li>
                       <div class="d-inline-flex p-2 bd-highlight"></div>
@@ -101,13 +100,14 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Awards
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item"  href="#">Description</a></li>
-                          <li><a class="dropdown-item" href="#">Results</a></li>
+                        <ul id="di"class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a id="di"class="dropdown-item"  href="#">Description</a></li>
+                          <li><a id="di"class="dropdown-item" href="#">Results</a></li>
                     
-                          <li><a class="dropdown-item" href="#">Measurements</a></li>
+                          <li><a id="di"class="dropdown-item" href="#">Measurements</a></li>
                         </ul>
                       </li>
+                    </div>
                     </div>
                     </ul>
                     </div>
@@ -172,18 +172,20 @@
         <div class="logo_Home">
             <img class="logo_Home_img"src="images/logo/team_2021/logo_home.png" alt="Home logo">
         </div>
+        <div class="introduction">
         <div class="project_introduction">
                 <div id="text_intro"><p class="content_text">During April 2021, fruit cultivators throughout 
                 Switzerland incurred enormous losses due to frost. A widespread and renowned crop 
                 in the Suisse Romande region are apricots, which were particularly affected by the 
                 cold. This year’s apricot production loss is estimated to be around 85%, and cost 
                 millions of dollars. </p></div>
-                <img src="images/blender/silouette arbre.png" alt="tree silouette">
+                <img src="images/blender/silouette arbre.png" alt="tree silouette" class="alticon">
                 <div id="loss"><p class="content_text">Swiss Production loss 2021</p><h1 id="pourcentage">85%</h1></div>
-                <img src="images/blender/logo_monnaie_grey.png" alt="logo monnaie">
+                <img src="images/blender/logo_monnaie_grey.png" alt="logo monnaie" class="alticon">
                 <div id="prob_agriculteurs"><p p class="content_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nulla consectetur neque inventore.</p></div>
                 <div id="prob_finance"><p p class="content_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, magnam odio minima sapiente totam et neque fuga quo?</p></div>
         </div>
+      </div>
         <div class="project_indepth">
                 <div id="text_intro"><p class="content_text">Our spray will contain agents allowing us to combat a 
                     plant pathogen that accelerates freezing. This pathogene is a bacteria called 

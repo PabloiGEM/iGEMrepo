@@ -103,7 +103,7 @@
 
 .content_text{
     color:#21262e;
-    font-size: 1.5em; 
+    font-size: 1vw; 
     font-weight: bolder;
 }
 
@@ -154,8 +154,8 @@ img.logo_Home_img{
 
 .project_introduction {
     position:relative;
-    width: 80%;
-    height: 50%;
+    width: 70%;
+    max-height: 800px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     backdrop-filter: blur(25px);
     border-radius: 15px;
@@ -175,8 +175,8 @@ img.logo_Home_img{
 
 .project_indepth{
     position:relative;
-    width: 80%;
-    height: 50%;
+    width: 70%;
+    
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 15px;
     background-color: #f0c58c4b;
@@ -224,7 +224,8 @@ img.logo_Home_img{
 }
 
 #pourcentage{
-    font-size: 125px;
+    font-family:Impact, Haettenschweiler, 'Bold', sans-serif;
+    font-size: 8vw;
     color: #21262e;
 }
 
@@ -269,7 +270,10 @@ img.logo_Home_img{
     position:absolute;
     bottom: 10%;
 }
-
+.alticon{
+    width:40%;
+   
+}
 /* section {
     color: black;
     height: 5000px;
@@ -287,7 +291,7 @@ img.logo_Home_img{
    /* Navigation bar */
 
 .logo {
-    height: 60px;
+    height: 40px;
     float:left;
     margin: 15px;
     padding: 0px;
@@ -360,10 +364,10 @@ li {
 }
 
 .background_p1{
-   height: 500px;
+   height: 300px;
    background: linear-gradient(90deg, rgba(131,58,180,0) 0%, #5D84A6 100%);
    backdrop-filter: blur(25px);
-   width: 100%;
+   background-size: cover;
    z-index:-1000;
    display: grid;
    grid-template-columns: 1fr 2fr;
@@ -591,7 +595,10 @@ footer div {
 
 
 
-/*BS customize*/
-.dropdown-item{
-    color:black;
+/*BootStrap customize*/
+
+
+/*dropdown item custom*/
+#di{
+    color: black;
 }
