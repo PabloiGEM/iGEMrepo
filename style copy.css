@@ -103,7 +103,7 @@
 
 .content_text{
     color:#21262e;
-    font-size: 1vw; 
+    font-size: 1.4vw; 
     font-weight: bolder;
 }
 
@@ -216,7 +216,7 @@ img.logo_Home_img{
 }
 
 
-#loss{
+blockquote#loss{
     background-color: none;
     grid-column: 2/3;
     text-align: center;
@@ -368,11 +368,12 @@ li {
 }
 
 .background_p1{
-   height: 300px;
+   height: 500px;
    background: linear-gradient(90deg, rgba(131,58,180,0) 0%, #5D84A6 100%);
    backdrop-filter: blur(25px);
-   background-size: cover;
+   width: 100%;
    z-index:-1000;
+   background-size: cover;
    display: grid;
    grid-template-columns: 1fr 2fr;
 }
@@ -546,6 +547,7 @@ footer div {
    border-bottom: white 1px  solid;
    padding: 20px;
    margin-top: 0px;
+   font-size: 2.5vw;
 }
 
 #sponsor img {
@@ -566,6 +568,7 @@ footer div {
     padding: 20px;
     margin-top: 0px;
     border-bottom: white 1px  solid;
+    font-size: 2.5vw;
  }
 
 #follow img {
@@ -586,6 +589,7 @@ footer div {
     padding: 20px;
     margin-top: 0px;
     border-bottom: white 1px  solid;
+    font-size: 2.5vw;
  }
 
 
