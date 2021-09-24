@@ -1,0 +1,43 @@
+ /*-------NAVBAR styling-------*/
+ 
+ .navbar {
+     margin-bottom: 0;
+     border-radius: 0;
+     background-color: white;
+     color: black;
+     padding: 1% 0;
+     font-size: 1.2em;
+     border: 0;
+ }
+ /*logo settings*/
+ 
+ .navbar-brand {
+     float: left;
+     min-height: 55px;
+     padding: 0 15px 5px;
+ }
+ /*Navbar highlight color*/
+ 
+ .navbar-inverse .navbar-nav>li>a:hover,
+ .navbar-inverse .navbar-nav>li>a:focus {
+     background-color: #2d00aa;
+ }
+ /*Current page highlight in navbar*/
+ 
+ .navbar-inverse .navbar-nav .active a,
+ .navbar-inverse .navbar-nav .active a:focus,
+ .navbar-inverse .navbar-nav .active a:hover {
+     color: black;
+     background-color: rgb(201, 192, 192);
+ }
+ /*burger menu background color*/
+ 
+ .navbar-inverse .navbar-toggle:hover,
+ .navbar-inverse .navbar-toggle:focus {
+     background-color: rgb(201, 192, 192);
+ }
+ /*burger menu bar color*/
+ 
+ .navbar-inverse .navbar-header .icon-bar {
+     background-color: black;
+ }
