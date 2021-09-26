@@ -1,59 +1,102 @@
 <!DOCTYPE html>
-
-<html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
 
 <head>
-    <title>UNIL iGEM Team</title>
-
-    <!-- Required meta tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap_theme.css">
-    <link rel="icon" type="image/png" href="images/logo/team_2021/square_logo.png">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropdown Menu with Search Box | CodingNepal</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="template_style2.css">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><img src="images\logo\team_2021\Asset 1.svg" width="200px"></div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#" class="desktop-link">Project</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Project</label>
+                        <ul>
+                            <li><a href="#">Description</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Proof of concept</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Wetlab</a>
+                        <input type="checkbox" id="show-services">
+                        <label for="show-services">Wetlab</label>
+                        <ul>
+                            <li><a href="#">Engineering succes</a></li>
+                            <li><a href="#">Results</a></li>
+                            <li><a href="#">Measurements</a></li>
+                            <li><a href="#">Parts</a></li>
+                            <li><a href="#">Lab notebook</a></li>
+                            <li><a href="#">Safety</a></li>
+                            <li>
+                                <a href="#" class="desktop-link">More Items</a>
+                                <input type="checkbox" id="show-items">
+                                <label for="show-items">More Items</label>
+                                <ul>
+                                    <li><a href="#">Sub Menu 1</a></li>
+                                    <li><a href="#">Sub Menu 2</a></li>
+                                    <li><a href="#">Sub Menu 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Drylab</a>
+                        <input type="checkbox" id="show-drylab">
+                        <label for="show-drylab">Drylab</label>
+                        <ul>
+                            <li><a href="#">Hardware</a></li>
+                            <li><a href="#">Model</a></li>
+                            <li><a href="#">Software</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Human practises</a>
+                        <input type="checkbox" id="show-human">
+                        <label for="show-human">Human practises</label>
+                        <ul>
+                            <li><a href="#">Integrated human practises</a></li>
+                            <li><a href="#">other</a></li>
+                            <li><a href="#">other</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="desktop-link">Awards</a>
+                        <input type="checkbox" id="show-awards">
+                        <label for="show-awards">Awards</label>
+                        <ul>
+                            <li><a href="#">Integrated human practises</a></li>
+                            <li><a href="#">other</a></li>
+                            <li><a href="#">other</a></li>
+                        </ul>
+                    </li>
 
-            <div class="collapse navbar-collapse" id="navbarColor02">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home
-            <span class="visually-hidden">(current)</span>
-          </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                    </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
-        </div>
-    </nav>
+
+        </nav>
+    </div>
+
+    <div class="title">
+        <h2>Responsive Dropdown Menu Bar with Searchbox</h2>
+        <h2>using only HTML & CSS - Flexbox</h2>
+    </div>
 
 </body>
+
+</html>
