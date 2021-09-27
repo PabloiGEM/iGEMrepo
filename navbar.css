@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
 
 html {
@@ -14,6 +14,7 @@ html {
     background: #171c24;
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 
 .wrapper nav {
