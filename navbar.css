@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -28,7 +32,7 @@ nav .content {
 }
 
 nav .content .links {
-    margin-left: 80px;
+    margin-left: 200px;
     display: flex;
 }
 
@@ -290,4 +294,95 @@ nav .content .links {
 .title h2 {
     font-size: 45px;
     margin: 5px 0;
+}
+
+
+/*footer */
+
+footer {
+    position: bottom;
+    background-color: #011C40;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    min-width: 400px;
+}
+
+footer div {
+    padding: 20px;
+    margin: 10px;
+}
+
+#sponsor {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 105px auto auto auto;
+    grid-gap: 1rem
+}
+
+.last {
+    grid-column: 2;
+}
+
+#sponsor h1 {
+    color: white;
+    grid-column: 1/4;
+    border-bottom: white 1px solid;
+    padding: 20px;
+    margin-top: 0px;
+    font-size: 2.5vw;
+}
+
+#sponsor img {
+    width: 70%;
+}
+
+#follow {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 105px auto auto auto;
+    grid-gap: 1rem;
+    border-left: white 1px solid;
+}
+
+#follow h1 {
+    color: white;
+    grid-column: 1/4;
+    padding: 20px;
+    margin-top: 0px;
+    border-bottom: white 1px solid;
+    font-size: 2.5vw;
+}
+
+#follow img {
+    width: 70%;
+}
+
+#contact {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 105px auto auto auto;
+    grid-gap: 1rem;
+    border-left: white 1px solid;
+}
+
+#contact h1 {
+    color: white;
+    grid-column: 1/4;
+    padding: 20px;
+    margin-top: 0px;
+    border-bottom: white 1px solid;
+    font-size: 2.5vw;
+}
+
+#contact img {
+    width: 70%;
+}
+
+#mail {
+    grid-column: 2;
 }
